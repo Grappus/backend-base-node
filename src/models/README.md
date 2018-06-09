@@ -1,4 +1,4 @@
-#Models
+# Models
 > - Each controller file must be named in the following convention: **modelName.js**
 > - This folder will contain the models that represent a collection in MongoDB. Each model must contain a description along with the details of all its attributes. In case of references, the developer must mention the **ref** keyword of an attribute. 
 > - It is the responsibility of the developer to describe each attribute thoroughly along with all accepted values for the attribute and specific constraints on the attributes.
