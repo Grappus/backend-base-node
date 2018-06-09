@@ -4,7 +4,8 @@
   "description": "This repository will serve as a boiler plate for new backend APIs to be developed in NodeJs and MongoDB. All the necessary basic modules required to start a project will be setup along with different environment compatibility to reduce setup time.",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "chai": "^4.1.2",
     "chai-http": "^4.0.0",
     "cities": "^1.1.2",
+    "cluster": "^0.7.7",
     "country-data": "0.0.31",
     "countrystatesjs": "0.0.12",
     "crypto": "^1.0.1",

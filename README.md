@@ -9,13 +9,16 @@ This repository contains a basic NodeJs initialised project with Mongo DB and Ex
 ###Coding Conventions
 ----------
  [1]. Use camelCase
+ 
  [2]. Every module name in package must start with package name
-
   > ex - While writing a module for *User* in package *models* then module file name must be **modelsUser** and if the package name is *controller* then module file name must be **controllerUser**
   
 [3]. Run ```npm run test``` to check test case status.  
+
 [4]. Declare and use constants as much as possible.
+
 [5]. Create atomic functions for each task and call functions to do your tasks.
+
 [6]. Ensure you write test cases for every API endpoint you create.
 
 ###HTTP Status Code convention
@@ -35,9 +38,13 @@ Status          | Condition
 ### Project Setup
 ----------
 [1]. First create "logs" directory in src folder
+
 [2].  Then create .env file in parent directory and copy keys from sample.env into it and change values appropriately
+
 [3]. Ensure you have MongoDB installed and a service running for the DB.
+
 [3]. Run "npm install" to install packages and dependencies listed in the package.json
+
 [4]. After that just run "npm run start".
 
 > **Tech Stack:** We are using NodeJs with ExpressJs framework, MongoDB as primary database, Redis for caching and AWS as main cloud service. Mocha and chai with chai-http for TDD
@@ -83,7 +90,6 @@ Status          | Condition
 {
   success: true
 }
-```
 ### Project Structure
 ----------
   we are using [dotenv][1] package.
@@ -96,29 +102,29 @@ Status          | Condition
 
 In src folder you will get 7 main folders, named:
 
-cache
+**cache**
 :   contains cache-models and object
 
-controllers
+**controllers**
 : contains all functions related to business logic. All module
       name must start with *controller*
       
-middleware
+**middleware**
 : contains middleware modules. All module name must start with
       *middleware*
       
-models
+**models**
 : contains all functions and related to DB and also the DB related
       methods. All module name must start with *model*
 
-routes
+**routes**
 : contains routes related modules and bind endpoints to
       controllers. All module name must start with *route*
 
-scripts
+**scripts**
 : ontain random scripts, non JS files, use for random tasks
 
-utils
+**utils**
 : contains common util modules. All module name must start with
       *util*
 
